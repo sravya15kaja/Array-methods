@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("task-1");        
+        let a=["Hi nanna","RRR","saripoda sanivaram","devara"];
+        console.log(a);
+        
+        for(i=0;i<a.length;i++){
+            console.log("This is from for loop",a[i]);            
+        }
+        for(i in a ){
+            console.log("This is from for-in loop",a[i]);  
+        }
+        for(i of a){
+            console.log("This is from for-of loop",i);   
+        }
+        // 2
+        console.log("task-2");
+        console.log("remove first and last element");
+        let b=[10,20,30,40,50,60];
+        console.log(b);        
+        console.log("first element is",b.shift());
+        console.log("last element is",b.pop());
+        console.log("Array is",b);
+
+
+
+
+        // 3
+        console.log("task-3");
+        console.log("reverse an array");
+        let c=[1,2,3,4,5,6];
+        let g=[];
+        console.log("array ",c);
+        
+        for(i=c.length;i>0;i--){
+            d=c.pop();
+            g.push(d);
+        }
+        console.log("reverse array is ",g);
+
+
+
+
+        console.log("task-4");
+        console.log("even sum , odd sum");
+        let e=[12,3,5,6,22,56,29]
+        let evensum=0;
+        let oddsum=0;
+        console.log(e);        
+        for(i=0;i<e.length;i++){
+            if(e[i]%2==0){
+                console.log("Even",e[i]);
+                evensum+=e[i];                
+            }
+            else{
+                console.log("Odd",e[i]);
+                oddsum+=e[i];
+            }
+        }        
+        console.log("Evensum = ",evensum);
+        console.log("Oddsum = ",oddsum);
+
+
+
+
+        // 5
+        console.log("task-5");
+        console.log("datatype seperate in array");
+        let f=["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+        console.log(f);        
+        let string=[];
+        let number=[];
+        let boolean=[];
+        let object=[];
+        for(i=0;i<f.length;i++){
+            if(typeof f[i]==="string"){
+                string.push(f[i])
+            }         
+            else
+            if(typeof f[i]==="number") {
+                number.push(f[i]);
+            }  
+            else
+            if(typeof f[i]==="boolean"){
+                boolean.push(f[i]);
+            }
+            else
+            if(typeof f[i]==="object"){
+                object.push(f[i]);
+            }
+        }
+        console.log("str = ",string);
+        console.log("num = ",number);
+        console.log("bool =",boolean);
+        console.log("obj =",object[0]);
+
+
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+        
+    </script>
+</body>
+</html>
