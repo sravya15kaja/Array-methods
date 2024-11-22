@@ -9,8 +9,7 @@
     <script>
         console.log("task-1");        
         let a=["Hi nanna","RRR","saripoda sanivaram","devara"];
-        console.log(a);
-        
+        console.log(a);       
         for(i=0;i<a.length;i++){
             console.log("This is from for loop",a[i]);            
         }
@@ -28,26 +27,18 @@
         console.log("first element is",b.shift());
         console.log("last element is",b.pop());
         console.log("Array is",b);
-
-
-
-
         // 3
         console.log("task-3");
         console.log("reverse an array");
         let c=[1,2,3,4,5,6];
         let g=[];
         console.log("array ",c);
-        
         for(i=c.length;i>0;i--){
             d=c.pop();
             g.push(d);
         }
         console.log("reverse array is ",g);
-
-
-
-
+        // 4
         console.log("task-4");
         console.log("even sum , odd sum");
         let e=[12,3,5,6,22,56,29]
@@ -66,10 +57,6 @@
         }        
         console.log("Evensum = ",evensum);
         console.log("Oddsum = ",oddsum);
-
-
-
-
         // 5
         console.log("task-5");
         console.log("datatype seperate in array");
@@ -100,19 +87,26 @@
         console.log("num = ",number);
         console.log("bool =",boolean);
         console.log("obj =",object[0]);
-
-
-        
-
-        
-        
-        
-        
-        
-        
-
-        
-        
+        // problem solving
+        console.log("problemsolving");
+        let h=+prompt("enter the number");
+        console.log(h);        
+        for(j=h;j%j==0;j--){
+            console.log("numbers are",j);
+        }
+        // task2
+        console.log("reverse numbers");        
+        for(k=-1;!(k==-11);k--){
+         console.log(k)
+        }
+        // task3
+        let m=prompt("enter the number with double digit");
+        let s=0;
+        for( l=0;l<m.length;l++){
+            console.log(m[l]);
+            s+=Number(m[l]);
+        }
+        console.log("sum of numbers is ="+s);
     </script>
 </body>
 </html>
